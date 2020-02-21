@@ -1,6 +1,6 @@
 /**
  * @file
- * Common code for file tests
+ * Shared code for the MxOps Path functions
  *
  * @authors
  * Copyright (C) 2020 Richard Russon <rich@flatcap.org>
@@ -20,14 +20,6 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef TEST_TEST_COMMON_H
-#define TEST_TEST_COMMON_H
+#include "config.h"
 
-#include <stdio.h>
-#include "mutt/lib.h"
-
-const char *test_get_test_dir(void);
-void test_gen_path(char *buf, size_t buflen, const char *fmt);
-void test_init(void);
-
-#endif /* TEST_TEST_COMMON_H */
+const char *HomeDir;
