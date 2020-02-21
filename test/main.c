@@ -473,6 +473,14 @@
   /* pattern */                                                                \
   NEOMUTT_TEST_ITEM(test_mutt_pattern_comp)                                    \
                                                                                \
+  /* pop */                                                                    \
+  NEOMUTT_TEST_ITEM(test_pop_path2_canon)                                      \
+  NEOMUTT_TEST_ITEM(test_pop_path2_compare)                                    \
+  NEOMUTT_TEST_ITEM(test_pop_path2_parent)                                     \
+  NEOMUTT_TEST_ITEM(test_pop_path2_pretty)                                     \
+  NEOMUTT_TEST_ITEM(test_pop_path2_probe)                                      \
+  NEOMUTT_TEST_ITEM(test_pop_path2_tidy)                                       \
+                                                                               \
   /* regex */                                                                  \
   NEOMUTT_TEST_ITEM(test_mutt_regex_capture)                                   \
   NEOMUTT_TEST_ITEM(test_mutt_regex_compile)                                   \
