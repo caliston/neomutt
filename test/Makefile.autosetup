@@ -329,6 +329,7 @@ NOTIFY_OBJS	= test/notify/notify_free.o \
 		  test/notify/notify_set_parent.o
 
 MX_PATH_OBJS	= test/mx_path/common.o \
+		  test/mx_path/compmbox.o \
 
 PARAMETER_OBJS	= test/parameter/mutt_param_cmp_strict.o \
 		  test/parameter/mutt_param_delete.o \

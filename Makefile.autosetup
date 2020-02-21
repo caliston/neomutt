@@ -120,7 +120,7 @@ ALLOBJS+=	$(LIBNNTPOBJS)
 ###############################################################################
 # libcompmbox
 LIBCOMPMBOX=	libcompmbox.a
-LIBCOMPMBOXOBJS=compmbox/compress.o
+LIBCOMPMBOXOBJS=compmbox/compress.o compmbox/path.o
 CLEANFILES+=	$(LIBCOMPMBOX) $(LIBCOMPMBOXOBJS)
 MUTTLIBS+=	$(LIBCOMPMBOX)
 ALLOBJS+=	$(LIBCOMPMBOXOBJS)
@@ -633,7 +633,9 @@ coverage: all test
 	  --directory config \
 	  --directory core \
 	  --directory email \
-	  --directory mutt
+	  --directory mutt \
+	  --directory compmbox \
+
 	-genhtml --output-directory lcov --frames lcov.info
 	lcov --list lcov.info
 @endif
